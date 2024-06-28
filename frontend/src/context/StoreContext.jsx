@@ -23,7 +23,7 @@ const StoreContextProvider = (props) => {
   const [flowerList, setFlowerList] = useState([]);
   const [plantList, setPlantList] = useState([]);
 
-  const url = "http://localhost:4000";
+  const url = "https://kissan-bazzar-new-backend.onrender.com";
 
   // Function to clear cart items
   const clearCart = () => {
