@@ -105,6 +105,10 @@ const Navbar = ({ setShowLogin }) => {
                 <li onClick={() => navigate('/myorders')}><img src={assets.bag_icon} alt="Orders" /><p>Orders</p></li>
                 <hr />
                 <li onClick={logout}><img src={assets.logout_icon} alt="Logout" /><p>Logout</p></li>
+                 <hr />
+                <li onClick={() => window.location.href = 'https://kissan-bazzar-new-admin.onrender.com/'}>
+                  <img src={assets.admin_icon} alt="Admin Panel" /><p>Admin Panel</p>
+                </li>
               </ul>
             </div>
         }
