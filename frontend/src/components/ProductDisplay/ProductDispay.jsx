@@ -19,7 +19,7 @@ const ProductDisplay = ({ category, categories }) => {
         setLoading(true);
         let response;
         if (category === "All") {
-          response = await axios.get(`http://localhost:4000/api/food/list/`);
+          response = await axios.get(`https://kissan-bazzar-new-backend.onrender.com/api/food/list/`);
           setAllData(groupByCategory(response.data.data));
         } else {
           response = await axios.get(
