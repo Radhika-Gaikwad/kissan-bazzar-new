@@ -23,7 +23,7 @@ const ProductDisplay = ({ category, categories }) => {
           setAllData(groupByCategory(response.data.data));
         } else {
           response = await axios.get(
-            `http://localhost:4000/api/food/list/${category}`
+            `https://kissan-bazzar-new-backend.onrender.com/api/food/list/${category}`
           );
           setData(response.data.data);
         }
@@ -65,7 +65,7 @@ const ProductDisplay = ({ category, categories }) => {
           name={item.name}
           price={item.price}
           description={item.description}
-          image={`http://localhost:4000/images/${item.image}`}
+          image={`https://kissan-bazzar-new-backend.onrender.com/${item.image}`}
           onAddToCart={() => addToCart(item._id)} // Pass addToCart function as prop
         />
       ))}
