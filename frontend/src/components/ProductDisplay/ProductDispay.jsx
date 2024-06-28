@@ -65,7 +65,7 @@ const ProductDisplay = ({ category, categories }) => {
           name={item.name}
           price={item.price}
           description={item.description}
-          image={`https://kissan-bazzar-new-backend.onrender.com/${item.image}`}
+          image={`https://kissan-bazzar-new-backend.onrender.com/images/${item.image}`}
           onAddToCart={() => addToCart(item._id)} // Pass addToCart function as prop
         />
       ))}
