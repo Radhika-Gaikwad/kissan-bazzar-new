@@ -60,7 +60,7 @@ const Cart = () => {
         return (
           <div key={item._id}>
             <div className="cart-items-item">
-              <img src={`http://localhost:4000/images/${item.image}`} alt={item.name} />
+              <img src={`https://kissan-bazzar-new-backend.onrender.com/images/${item.image}`} alt={item.name} />
               <p>{item.name}</p>
               <p>{item.price} Rs.</p>
               <p>{cartItems[item._id]}</p>
