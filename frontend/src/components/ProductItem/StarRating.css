@@ -1,0 +1,10 @@
+
+.active {
+ 
+  color: #089203; /* Active color */
+}
+
+.inactive {
+   /* Inactive color set to yellow */
+   color: #001202;
+}

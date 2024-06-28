@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Outfit;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #e8f1e8;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+  .app{
+    overflow-x:hidden;
+    width: fit-window;
+  }
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    background-color: rgb(9, 50, 1);
+  }
+  50% {
+    background-color: rgb(50, 9, 1);
+  }
+  100% {
+    background-color: rgb(9, 50, 1);
+  }
+}
+
+@keyframes scaleUp {
+  to {
+    transform: scale(1.1);
+  }
+}
+
+@keyframes changeColor {
+  to {
+    background-color: rgb(50, 9, 1);
+    color: white;
+  }
+}
+
+@keyframes shadowEffect {
+  to {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(10deg);
+  }
+}
+
+@keyframes underlineGrow {
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Applying animations */
+.element-fadeIn {
+  animation: fadeIn 2s ease-in-out;
+}
+
+.element-bounce {
+  animation: bounce 2s infinite;
+}
+
+.element-slideIn {
+  animation: slideIn 1s ease-out;
+}
+
+.element-colorChange {
+  animation: colorChange 3s infinite;
+}

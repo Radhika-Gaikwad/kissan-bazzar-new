@@ -1,0 +1,87 @@
+.add {
+  width: 70%;
+  margin-left: max(5vw, 25px);
+  margin-top: 50px;
+  color: #6d6d6d;
+  font-size: 16px;
+}
+
+.add form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.add-img-upload img {
+  width: 120px;
+}
+
+.add-product-name, .add-product-description {
+  width: 100%;
+}
+
+.add-product-name input, .add-product-description textarea {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add-category-price {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.add-category-price select, .add-category-price input {
+  width: calc(50% - 15px);
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.add-button {
+  width: 200px;
+  border: none;
+  padding: 10px;
+  background-color: rgb(1, 41, 1);
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  align-self: flex-start;
+}
+.add-category select{
+  width: 200px;
+}
+
+@media (max-width: 768px) {
+  .add {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 30px;
+  }
+
+  .add-category-price {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .add-category-price select, .add-category-price input {
+    width: 100%;
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .add {
+    width: 100%;
+    margin-left: 0;
+    padding: 10px;
+  }
+
+}
