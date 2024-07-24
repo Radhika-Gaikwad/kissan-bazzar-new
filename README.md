@@ -1,9 +1,7 @@
-
-Memory updated
-Here is a detailed explanation of your project "Kissa-Bazzar" for your GitHub README file:
-
 Kissa-Bazzar
 Motive: Direct contact between farmers and consumers.
+
+![Description of the image](./project1.png)
 
 Project Overview
 "Kissa-Bazzar" is a fully functional and mobile-responsive e-commerce website designed to bridge the gap between farmers and consumers. Built using the MERN stack, the platform allows farmers to register and manage their natural farming products, and customers to purchase these products seamlessly.
